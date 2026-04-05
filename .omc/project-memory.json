@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775371159515,
+  "projectRoot": "/Users/sho/Downloads/line-harness-oss",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=20",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 20"
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {
+      "dev:worker": "pnpm --filter worker dev",
+      "dev:web": "pnpm --filter web dev",
+      "build": "pnpm -r build",
+      "deploy:worker": "pnpm --filter worker deploy",
+      "deploy:web": "pnpm --filter web build",
+      "db:migrate": "wrangler d1 execute line-crm --file=packages/db/schema.sql",
+      "db:migrate:local": "wrangler d1 execute line-crm --file=packages/db/schema.sql --local",
+      "deploy:setup": "node packages/create-line-harness/dist/index.js",
+      "deploy:update": "node packages/create-line-harness/dist/index.js update"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "apps": {
+      "path": "apps",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775371159471,
+      "keyFiles": []
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 7,
+      "lastAccessed": 1775371159471,
+      "keyFiles": [
+        "CHANGELOG.md",
+        "COMPETITOR_FEATURES.md",
+        "OSS-SYNC-CHARTER.md",
+        "PROGRESS.md",
+        "SPEC.md"
+      ]
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775371159471,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "apps/worker/wrangler.toml",
+      "accessCount": 3,
+      "lastAccessed": 1775371202932,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
