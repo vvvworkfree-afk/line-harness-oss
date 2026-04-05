@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"echo \\\"LINE_CHANNEL_SECRET を入力してください（Messaging API チャネルのチャネルシークレット）\\\" && npx wrangler secret put LINE_CHANNEL_SECRET\",\"timeout\":120000,\"description\":\"Set LINE_CHANNEL_SECRET secret\"}",
-  "error": "Exit code 1\nLINE_CHANNEL_SECRET を入力してください（Messaging API チャネルのチャネルシークレット）\n\n ⛅️ wrangler 4.77.0 (update available 4.80.0)\n─────────────────────────────────────────────\n\n\u001b[31m✘ \u001b[41;31m[\u001b[41;97mERROR\u001b[41;31m]\u001b[0m \u001b[1mRequired Worker name missing. Please specify the Worker name in your Wrangler configuration file, or pass it as an argument with `--name <worker-name>`\u001b[0m\n\n\n🪵  Logs were written to \"/Users/sho/Library/Preferences/.wrangler/logs/wrangler-2026-04-05_06-41-04_983.log\"",
-  "timestamp": "2026-04-05T06:41:05.296Z",
-  "retry_count": 1
-}

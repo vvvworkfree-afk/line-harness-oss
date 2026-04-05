@@ -84,9 +84,15 @@
   "hotPaths": [
     {
       "path": "apps/worker/wrangler.toml",
-      "accessCount": 3,
-      "lastAccessed": 1775371202932,
+      "accessCount": 5,
+      "lastAccessed": 1775372190197,
       "type": "file"
+    },
+    {
+      "path": "apps/web",
+      "accessCount": 1,
+      "lastAccessed": 1775373615699,
+      "type": "directory"
     }
   ],
   "userDirectives": []
